@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/components.css">
+    <title>Ro'yxatdan o'tish</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="/register" method="post">
+                <h1>Akaunt yaratish</h1>
+
+                <span>elektron manzilni kiritishni unutmang</span>
+                <input type="text" name="name" placeholder="Ismingiz" />
+                <input type="phone" name="phone" value="+998" required minlength="12" maxlength="13" />
+                <input type="password" name="password" placeholder="Parolingiz" required minlength="6" />
+                <div class="wrapper">
+                    <input type="radio" name="gender" value="erkak" id="option-1" checked>
+                    <input type="radio" name="gender" value="ayol" id="option-2">
+                    <label for="option-1" class="option option-1">
+						 <span>Erkak</span>
+						 </label>
+                    <label for="option-2" class="option option-2">
+						
+						 <span>Ayol</span>
+					  </label>
+                </div>
+                <button>Ro'yxatdan o'tish</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="/login" method="post">
+                <h1>Kirish</h1>
+
+                <span>telefon raqam va parolingizdan foydalaning</span>
+                <input type="phone" name="phone" placeholder="telefon raqamingiz" />
+                <input type="password" name="password" placeholder="Parolingiz" />
+                <button>Kirish</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Xush kelibsiz!</h1>
+                    <p>Biz bilan doimo aloqada qolishni istasangiz iltimos o'zingizni aniq ma'lumorlaringizni kiriting!</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Assalomu alaykum, bro!</h1>
+                    <p>Shaxsiy ma'lumotlaringizni kiriting va biz bilan Ingliz tilini oo'rganishni davom ettiring!</p>
+                    <button class="ghost" id="signUp">Ro'yxatdan o'tish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Asadbek Ne'matov tomonidan yaratilgan</p>
+    </footer>
+</body>
+<script src="/js/script.js"></script>
+
+</html>
